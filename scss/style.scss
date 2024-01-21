@@ -1,0 +1,52 @@
+
+%btn-border1 {
+    border: 1px solid #EE3124;
+}
+%btn-border2 {
+    border: 1px solid #B20000;
+}
+%btn-border3 {
+    border: 1px solid #CED5DD;
+}
+%btn-color {
+    color: #24252E;
+    background-color: white;
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 5rem;
+    line-height: 1.95rem;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+.btn:active {
+    scale: 0.95;
+}
+.btn_theme_primary {
+    color: white;
+    @extend %btn-border1;
+    background-color: #EE3124;
+        &:hover{
+        @extend %btn-border2;
+        background-color: #B20000;
+        }
+        &:disabled {
+            @extend %btn-border3;
+            background-color: #CED5DD;
+        }
+}
+
+.btn_theme_secondary {
+    @extend %btn-color;
+    @extend %btn-border1;
+        &:hover {
+        @extend %btn-color;
+        @extend %btn-border2;
+        }
+        &:disabled {
+        @extend %btn-color;
+        @extend %btn-border3;
+        }
+}
