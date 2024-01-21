@@ -1,0 +1,40 @@
+.btn_theme_secondary, .btn_theme_primary {
+  border: 1px solid #EE3124;
+}
+
+.btn_theme_secondary:hover, .btn_theme_primary:hover {
+  border: 1px solid #B20000;
+}
+
+.btn_theme_secondary:disabled, .btn_theme_primary:disabled {
+  border: 1px solid #CED5DD;
+}
+
+.btn_theme_secondary:disabled, .btn_theme_secondary:hover, .btn_theme_secondary {
+  color: #24252E;
+  background-color: white;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  line-height: 1.95rem;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 0.95;
+}
+
+.btn_theme_primary {
+  color: white;
+  background-color: #EE3124;
+}
+.btn_theme_primary:hover {
+  background-color: #B20000;
+}
+.btn_theme_primary:disabled {
+  background-color: #CED5DD;
+}/*# sourceMappingURL=style.css.map */
